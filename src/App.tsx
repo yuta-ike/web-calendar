@@ -11,7 +11,7 @@ export const App = () => {
     <div>
       <div className="preview-only sticky inset-x-0 top-0 z-10 flex w-screen bg-white p-4 shadow">
         <div className="flex w-full max-w-[200mm] items-center gap-4">
-          <span className="mr-2">開始月:</span>
+          <span className="mr-2">カレンダー開始月:</span>
           <input
             type="month"
             name="start-month"
@@ -24,7 +24,7 @@ export const App = () => {
             onClick={() => window.print()}
             className="ml-auto rounded bg-slate-800 px-4 py-2 font-bold text-white"
           >
-            印刷
+            印刷する
           </button>
         </div>
       </div>

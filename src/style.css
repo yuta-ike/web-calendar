@@ -12,6 +12,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+button {
+  @apply cursor-pointer;
+}
+
 /** ref: https://github.com/cognitom/paper-css/blob/master/paper.css */
 @page {
   margin: 0;
