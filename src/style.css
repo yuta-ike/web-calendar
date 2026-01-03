@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sun: #ff6d4b;
+  --color-sat: #497bd8;
+}
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/** ref: https://github.com/cognitom/paper-css/blob/master/paper.css */
+@page {
+  margin: 0;
+}
+body {
+  margin: 0;
+  width: 210mm;
+  height: 296mm;
+}
+section {
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  page-break-after: always;
+  padding: 6mm;
+}
+
+/** Fix for Chrome issue #273306 **/
+@media print {
+  body {
+    width: 210mm;
+  }
+  .preview-only {
+    display: none;
+  }
+}
+
+/** For screen preview **/
+@media screen {
+  body {
+    background: #e0e0e0;
+  }
+  section {
+    background: white;
+    box-shadow: 0 0.5mm 2mm rgba(0, 0, 0, 0.3);
+    margin: 5mm;
+    height: 296mm;
+  }
+}
